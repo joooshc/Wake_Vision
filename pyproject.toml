@@ -1,0 +1,32 @@
+[project]
+name = "wake-vision"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "joooshc", email = "82163280+joooshc@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "cleanlab[all]>=2.9.0",
+    "datasets>=5.0.1",
+    "jax>=0.11.1",
+    "jupyter>=1.1.1",
+    "keras>=3.15.1",
+    "matplotlib>=3.11.1",
+    "ml-collections>=1.1.0",
+    "opencv-python>=5.0.0.93",
+    "pandas>=3.0.5",
+    "pillow>=12.3.0",
+    "qsl>=0.2.48",
+    "tensorflow>=2.21.0",
+    "tensorflow-datasets>=4.9.10",
+    "wandb>=0.29.0",
+]
+
+[project.scripts]
+wake-vision = "wake_vision:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"

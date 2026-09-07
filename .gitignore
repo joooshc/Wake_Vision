@@ -1,5 +1,6 @@
 dataset/
 .vscode/
+.venv
 *.code-workspace
 __pycache__/
 models/
@@ -7,3 +8,6 @@ checkpoints/
 tensorflow_slim/
 wandb/
 tmp/
+zipped_data/
+*.tar.gz
+*.jpg
